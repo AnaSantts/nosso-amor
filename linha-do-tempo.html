@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linha do Tempo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 10px 40px;
+    }
+
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #6e78c0;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+
+    p {
+        color: #3772bb;
+    }
+
+
+    .event {
+      padding: 20px;
+      position: relative;
+      background-color: #ffffff;
+      border-radius: 8px;
+      width: 45%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+
+    .event::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: #5d88ff;
+      border: 4px solid #fff1f4;
+      top: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+
+    .left {
+      left: 0;
+    }
+
+
+    .right {
+      left: 55%;
+    }
+
+
+    .right::after {
+      left: -10px;
+    }
+
+
+    .event h3 {
+      margin-top: 0;
+      color: #3772bb;
+    }
+
+
+    @media screen and (max-width: 768px) {
+      .event {
+        width: 100%;
+        left: 0 !important;
+        margin-bottom: 20px;
+      }
+
+
+      .timeline::after {
+        left: 20px;
+      }
+
+
+      .event::after, .right::after {
+        left: -30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Linha do Tempo💗</h1>
+    <nav>
+      <a href="linha-do-tempo.html">Linha do Tempo</a>
+      <a href="carta.html">Carta</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="surpresas.html">Surpresas</a>
+      <a href="jogo.html">Jogo</a>
+      <a href="playlist.html">Playlist</a>
+    </nav>
+  </header>
+
+
+  <div class="timeline">
+    <div class="event left">
+      <h3>O começo de tudo</h3>
+      <p>Começou de uma forma diferente, os dois com um pouco de medo, mas mesmo assim, com coragem de enfrentar qualquer coisa, começou com alguns gestos, umas conversas, um pouco de ciúmes ksks, e quando finalmente percebemos, já eramos nós, as flores, tudo só entre a gente, tudo perfeito do nosso jeito, nosso começou foi diferente dos normais, mas foi o nosso, e sou apaixonada por isso, igualmente sou por você</p>
+    </div>
+
+
+    <div class="event right">
+      <h3>Nosso primeiro beijo</h3>
+      <p>Você pode não lembrar a data kkk, mas no dia 25 de março de 2024, um pouco antes de oficializarmos nosso namoro, não foi como eu tinha planejado, simplesmente aconteceu, e tudo que posso dizer, é que mesmo sem termos pensado antes ou planejado primeiro, foi incrível, foi perfeito, foi onde eu tive mais certeza de que amava, por que no momento que nos beijamos, foi como se só existisse a gente naquele lugar, foi como se tudo estivesse no devido lugar, foi ter certeza que meu lugar é ao seu lado.</p>
+    </div>
+
+
+    <div class="event left">
+      <h3>O primeiro pedido</h3>
+      <p>Um dia incrível e ao mesmo tempo engraçado, no lugar onde tudo realmente começou, o pedido de namoro, eu lembro como hoje, e ainda guardo a flor que você me deu, o girassol...minha flor favorita! Tudo foi perfeito, e aí que fica engraçado kkk não olhamos o dia, e o nosso namoro começou no dia da mentira ksksks</p>
+    </div>
+
+
+    <div class="event right">
+      <h3>O pedido oficial</h3>
+      <p>No dia seguinte, você me pediu em namoro de novo kkk tudo isso para que não fosse no dia da mentira, e ali oficializamos nosso namoro, mesmo que não agradasse a todos, não importava, porque pra gente era daquele jeito que tinha que ser.  E assim nossa história de amor começou.</p>
+    </div>
+
+
+    <div class="event left">
+      <h3>Meu primeiro aniversário sendo sua namorada</h3>
+      <p>Pela primeira vez, foi tudo realmente perfeito, e isso porque você estava comigo, eu com certeza nunca vou esquecer daquele dia, daquele buquê, e principalmente de você, que realizou meu sonho de uma forma maravilhosa, só tenho uma coisa a dizer, foi tudo perfeito.</p>
+    </div>
+
+
+    <div class="event right">
+      <h3>A primeira vez que saimos juntos</h3>
+      <p>Esse dia foi perfeito, a primeira vez foi entre família, e foi incrível conhecer sua família, amei a sensação de fazer parte de algo tão lindo, amei ter você por perto durante um dia inteiro, e amei de verdade ver você tão lindo e todo arrumado, estava maravilhoso. E nesse dia, também tiramos nossa primeira foto sendo um casal, e o melhor, é a nossa favorita.</p>
+    </div>
+
+
+    <div class="event left">
+      <h3>Nosso primeiro dia dos namorados</h3>
+      <p>Caramba, como eu poderia esquecer, não é mesmo? O que dizer sobre esse dia...não tem como não ser perfeito, é você! você deixa tudo perfeito, mas daquele dia, o que eu mais amei, foi poder ter você comigo, perceber que eu estava finalmente bem e que eu era realmente amada, e tudo que eu mais desejei, era que você sentisse o mesmo que eu, que se sentisse amado, da mesma forma que eu sentia, porque nem que eu escreva mil palavras, mil vezes, mil folhas, mil livros, nada vai chegar perto de te mostrar o quanto eu te amo.
+      </p>
+    </div>
+
+
+    <div class="event right">
+      <h3>O seu primeiro aniversário ao meu lado</h3>
+      <p>Um bom dia com um texto de feliz aniversário, e era um dia de aula kkk infelizmente, mas no final, a gente foi pra pizzaria, se divertiu muito, e eu consegui te surpreender com o presente ksk e eu fiquei maravilhada por poder passar esse dia ao seu lado.</p>
+    </div>
+
+
+    <div class="event left">
+      <h3>Nosso primeiro natal juntos</h3>
+      <p>Poderia ser um simples natal, mas não era, e não tinha como ser, estavamos juntos, e esse era meu maior sonho , dividir esses momentos com você, e assim foi, nossa família reunida, um natal muito bom, um momento nosso.</p>
+    </div>
+
+
+    <div class="event right">
+      <h3>O primeiro ano novo ao seu lado</h3>
+      <p>Nesse dia eu não sabia o que eu mais amava, o fato de estar com você, viver aquele momento ao seu lado, saber que estavamos a quase um ano juntos, que praticamente naquele dia faziamos mais um mês de namoro, poder te beijar quando deu meia noite, eu realmente não sei o que foi melhor, mais sei que foi incrível.</p>
+    </div>
+
+
+    <div class="event left">
+      <h3>Um ano ao seu lado</h3>
+      <p>E como sempre, você conseguiu deixar tudo perfeito, foi um dia lindo, foi maravilhoso, e o melhor kk nesse dia apesar de ser depois de um ano, foi o nosso primeiro encontro, e eu não tenho o que dizer sobre esse dia, porque tudo com você é perfeito, mas aquele dia ao seu lado fez eu me apaixonar mais ainda.</p>
+    </div>
+
+
+    <div class="event right">
+      <h3>Meus meses ao seu lado</h3>
+      <p>Era impossível que eu falasse de cada mês separadamente, então eu preferi fazer diferente, isso é só pra te lembrar, que a cada mês ao seu lado, a cada dia, eu te amo mais ainda, e não poderia ser diferente, porque não tem nada ao seu lado que não fique perfeito, mesmo que simples, mesmo que a gente não fale nada, é sempre incrível e perfeito, porque é sempre com você do meu lado.</p>
+    </div>
+
+
+    <div class="event left">
+      <h3>Vamos continuar nossa história?</h3>
+      <p>Meu amor, eu não seria capaz de escrever toda a nossa história, porque primeiro eu precisaria de você para isso, e segundo, como eu iria escrever uma vida inteira ao seu lado? o tempo não é tanto, mas a vivência, os momentos, tudo, é único, e nem o melhor escritor iria conseguir escrever nossa história, por que alguns momentos são indescritíveis, não existem palavras o suficiente no mundo que explique o sentimento de ter você comigo, a única que chega perto... é o eu te amo.</p>
+      <p>Então, minha vida, o que me diz, <strong>vamos escrever uma linda história juntos?</strong></p>
+    </div>
+
+
+  </div>
+</body>
+</html>

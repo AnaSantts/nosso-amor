@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosso Universo - Surpresas</title>
+  <link href="style.css" rel="stylesheet" />
+  <style>
+    .surprise-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+
+    .surprise {
+      background-color: #fff;
+      border: 2px dashed #3737bb;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+
+    .surprise:hover {
+      background-color: #e4e4ff;
+    }
+
+
+    .content-hidden {
+      display: none;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+
+    .surprise.open .content-hidden {
+      display: block;
+    }
+
+
+    .emoji {
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+
+    div{
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cada envelope é uma surpresa🎁</h1>
+    <nav>
+      <a href="linha-do-tempo.html">Linha do Tempo</a>
+      <a href="carta.html">Carta</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="surpresas.html">Surpresas</a>
+      <a href="jogo.html">Jogo</a>
+      <a href="playlist.html">Playlist</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="surprise-grid">
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">No seu abraço é onde me sinto protegida.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu sempre choro quando discutimos por medo de te perder.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Me sinto triste por não conseguir demonstrar meu amor da forma que você merece.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Meu maior sonho é crescer e evoluir ao seu lado, formar uma vida.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu sou completamente apaixonada pela forma como você me olha.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Tenho muita insegurança e medo de te perder, porque eu te amo muito e as vezes não sei demonstrar.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Tento sempre dar o meu melhor pra você, mas sei que você merece muito mais.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você é e sempre será o meu melhor amigo, e eu amo isso.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você é o meu ponto de paz, minha calma.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Me sinto viva e completa quando estou ao seu lado.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você sem dúvidas vai ser o meu marido.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu vou te amar a cada dia da minha vida.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Nós vamos envelhecer juntos.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você vai ser o pai dos meus filhos.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você é o homem da minha vida.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo que você sempre respeita os meus sentimentos.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você me faz mais feliz do que eu pensei que poderia ser.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo o seu sorriro.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo seu beijo.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo cada pedacinho seu.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Sempre que te vejo meu coração disparada.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Por você eu tento ser uma pessoa melhor.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu confio em você, como eu não confiaria em ninguém.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo a forma como você sempre tem paciência comigo.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo como você consegue deixar cada momento divertido.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo seu jeito bobo.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Agradeço todos os dias por ter você comigo.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo o fato de você não se importar com minhas brincadeiras malucas.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Ao seu lado eu descobri que é você que me completa.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu te amo porque você sempre me apoia nos meus sonhos.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu te amo tanto que não imagino uma vida sem você.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo ouvir as músicas que me lembram você.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu sempre vou te apoiar nos seus sonhos.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">A cada dia eu te amo mais e mais.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Fico sempre imaginando como seria dividir uma vida com você.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Meu amor por você não tem medidas.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo ouvir a sua voz.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu te amo até mesmo quando estou com raiva.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo seu cabelo.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo seu olhos, seu olhar.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Me dói tanto quando lhe vejo sofrer.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você está na minha mente em cada minuto do dia.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo quando você me manda mensagem.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo quando saimos juntos.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo a química que temos um com o outro.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo sua companhia.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo o fato de você me amar apesar dos meus defeitos.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo quando você me chama de princesa.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo o nosso relacionamento.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo a forma como sempre estamos um pelo outro independente de tudo.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu quero estar com você em todos os momentos, nos bons e ruins.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu te amo porque você enxuga minhas lágrimas.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Tudo com você é perfeito.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você torna meus dias melhores.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo a pessoa que você é.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo seu jeito romântico.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Te amar me faz muito bem.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo seus carinhos.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você é minha outra metade.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo te elogiar.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo quando você me elogia.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo sonhar com você.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo ver as nossas fotos.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você é meu príncipe encantado.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo quando você beija minha testa.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu quero descobrir tudo que a vida tem pra oferecer ao teu lado.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Quero que você esteja comigo quando eu me formar.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Quero que você esteja do meu lado no altar.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Quero ver você se formar.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Quero acordar todos os dias ao teu lado.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo quando você presta atenção no que estou falando.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu sempre fico te olhando.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu fico feliz por cada conquista sua.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Sinto muita saudades de você.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo quando você me conta sobre o seu dia.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo que você sempre me diz pra onde vai pra não me preocupar.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você é muito especial para mim.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo quando brincamos e nos divertimos juntos.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Tudo sem você perde a graça.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo você por que sei o quanto se esforça para me fazer feliz.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Sabia que você é muito lindooo?</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você respeita o meu silêncio.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você me entende.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu sempre me esforço muito para te ver feliz e te fazer feliz.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo quando você cuida de mim.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo cuidar de você.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo quando você deita no meu peito.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Acho fofo quando você se abaixa pra me beijar.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você me aceita como eu sou e amo isso.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Sempre fico nervosa quando você está por perto.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo quando você diz que me ama.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo dizer que eu te amo.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Você é muito cheirosoo!!</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo o fato de que eu não vejo o tempo passar quando estou com você.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo ser a sua garota.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu me orgulho muito de você.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo que você é só meu.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo a nossa fidelidade.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Amo andar de mãos dadas com você.</div>
+      </div>
+
+
+      <div class="surprise" onclick="toggleSurprise(this)">
+        <span class="emoji">💌</span>
+        <div class="content-hidden">Eu amo te amar.</div>
+      </div>
+
+
+    </section>
+  </main>
+
+
+  <script>
+    function toggleSurprise(el) {
+      el.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

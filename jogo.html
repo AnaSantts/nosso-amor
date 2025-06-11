@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosso Universo - Jogo</title>
+  <link href="style.css" rel="stylesheet" />
+  <style>
+    .quiz {
+      max-width: 700px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+
+    .pergunta {
+      margin-bottom: 20px;
+    }
+
+
+    .pergunta h3 {
+      margin-bottom: 10px;
+      color: #2e65a8;
+    }
+
+
+    .respostas label {
+      display: block;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+
+
+    #resultado {
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+
+    .erro {
+      color: #e74c3c; /* vermelho */
+    }
+
+
+    .quase {
+      color: #e67e22; /* laranja */
+    }
+
+
+    .perfeito {
+      color: #2ecc71; /* verde */
+    }
+
+
+    button {
+      background-color: #378bbb;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+
+    button:hover {
+      background-color: #2e6e9c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quiz💘</h1>
+    <nav>
+      <a href="linha-do-tempo.html">Linha do Tempo</a>
+      <a href="carta.html">Carta</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="surpresas.html">Surpresas</a>
+      <a href="jogo.html">Jogo</a>
+      <a href="playlist.html">Playlist</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="quiz">
+
+
+      <div class="pergunta">
+        <h3>1. Qual foi a data do nosso primeiro beijo?</h3>
+        <div class="respostas">
+          <label><input type="radio" name="q1" value="a" /> 01/04/2024</label>
+          <label><input type="radio" name="q1" value="b" /> 25/03/2024</label>
+          <label><input type="radio" name="q1" value="c" /> 20/03/2024</label>
+          <label><input type="radio" name="q1" value="d" /> 15/04/2024</label>
+        </div>
+      </div>
+
+
+      <div class="pergunta">
+        <h3>2. Qual a minha cor favorita?</h3>
+        <div class="respostas">
+          <label><input type="radio" name="q2" value="a" /> Roxo</label>
+          <label><input type="radio" name="q2" value="b" /> Azul</label>
+          <label><input type="radio" name="q2" value="c" /> Vermelho</label>
+          <label><input type="radio" name="q2" value="d" /> Branco</label>
+        </div>
+      </div>
+
+
+      <div class="pergunta">
+        <h3>3. Qual foi a flor que você me deu quando me pediu em namoro?</h3>
+        <div class="respostas">
+          <label><input type="radio" name="q3" value="a" /> Uma rosa roxa</label>
+          <label><input type="radio" name="q3" value="b" /> Uma rosa vermelha</label>
+          <label><input type="radio" name="q3" value="c" /> Um buquê de flores</label>
+          <label><input type="radio" name="q3" value="d" /> Um girassol</label>
+        </div>
+      </div>
+
+
+      <div class="pergunta">
+        <h3>4. Qual foi a música que nós dois compartilhamos um com o outro e gostamos?</h3>
+        <div class="respostas">
+          <label><input type="radio" name="q4" value="a" /> Perfect - Ed Sheeran</label>
+          <label><input type="radio" name="q4" value="b" /> Send me an angel - Scorpions</label>
+          <label><input type="radio" name="q4" value="c" /> Livin' on a prayer - Bon Jovi</label>
+          <label><input type="radio" name="q4" value="d" /> Talking to the moon - Bruno Mars</label>
+        </div>
+      </div>
+
+
+      <div class="pergunta">
+        <h3>5. Qual foi a música que eu te dediquei por último?</h3>
+        <div class="respostas">
+          <label><input type="radio" name="q5" value="a" /> All of me - John Legend</label>
+          <label><input type="radio" name="q5" value="b" /> Those eyes - New West</label>
+          <label><input type="radio" name="q5" value="c" /> Something - The Beatles</label>
+          <label><input type="radio" name="q5" value="d" /> Perfect - Ed Sheeran</label>
+        </div>
+      </div>
+
+
+      <div class="pergunta">
+        <h3>6. Quando foi nosso primeiro encontro?</h3>
+        <div class="respostas">
+          <label><input type="radio" name="q6" value="a" /> 10/08/2024</label>
+          <label><input type="radio" name="q6" value="b" /> 02/04/2025</label>
+          <label><input type="radio" name="q6" value="c" /> 15/06/2024</label>
+          <label><input type="radio" name="q6" value="d" /> 07/03/2025</label>
+        </div>
+      </div>
+
+
+      <div class="pergunta">
+        <h3>7. Qual o dia em que começamos a namorar?</h3>
+        <div class="respostas">
+          <label><input type="radio" name="q7" value="a" /> 01/04/2024</label>
+          <label><input type="radio" name="q7" value="b" /> 01/05/2024</label>
+          <label><input type="radio" name="q7" value="c" /> 02/04/2024</label>
+          <label><input type="radio" name="q7" value="d" /> 03/06/2024</label>
+        </div>
+      </div>
+
+
+      <div class="pergunta">
+        <h3>8. Onde você me deu a caixinha com nossas iniciais?</h3>
+        <div class="respostas">
+          <label><input type="radio" name="q8" value="a" /> Na minha casa</label>
+          <label><input type="radio" name="q8" value="b" /> Na sua casa</label>
+          <label><input type="radio" name="q8" value="c" /> Na escola</label>
+          <label><input type="radio" name="q8" value="d" /> Na praça</label>
+        </div>
+      </div>
+
+
+      <div class="pergunta">
+        <h3>9. Em que mês eu lhe presenteei com a caneca que tem a nossa foto?</h3>
+        <div class="respostas">
+          <label><input type="radio" name="q9" value="a" /> 6 meses</label>
+          <label><input type="radio" name="q9" value="b" /> 4 meses</label>
+          <label><input type="radio" name="q9" value="c" /> 3 meses</label>
+          <label><input type="radio" name="q9" value="d" /> 1 mês</label>
+        </div>
+      </div>
+
+
+      <div class="pergunta">
+        <h3>10. Quantos anos tínhamos quando começamos a namorar?</h3>
+        <div class="respostas">
+          <label><input type="radio" name="q10" value="a" /> 16 e 17 anos</label>
+          <label><input type="radio" name="q10" value="b" /> 15 e 16 anos</label>
+          <label><input type="radio" name="q10" value="c" /> 18 e 18 anos</label>
+          <label><input type="radio" name="q10" value="d" /> 17 e 18 anos</label>
+        </div>
+      </div>
+
+
+      <button onclick="verificar()">Enviar Respostas</button>
+      <div id="resultado"></div>
+    </div>
+  </main>
+
+
+  <script>
+    function verificar() {
+      const respostas = {
+        q1: "b",
+        q2: "a",
+        q3: "d",
+        q4: "c",
+        q5: "b",
+        q6: "b",
+        q7: "c",
+        q8: "c",
+        q9: "d",
+        q10: "a"
+      };
+
+
+      let acertos = 0;
+
+
+      for (let key in respostas) {
+        const selecionada = document.querySelector(`input[name="${key}"]:checked`);
+        if (selecionada && selecionada.value === respostas[key]) {
+          acertos++;
+        }
+      }
+
+
+      const resultado = document.getElementById("resultado");
+      resultado.classList.remove("erro", "quase", "perfeito");
+
+
+      if (acertos <= 7) {
+        resultado.textContent = `Você acertou ${acertos} de 10! 💡 Que pena! Você não foi tão bem, ainda precisa melhorar.`;
+        resultado.classList.add("erro");
+      } else if (acertos <= 8) {
+        resultado.textContent = `Você acertou ${acertos} de 10! ✨ Você está quase lá!`;
+        resultado.classList.add("quase");
+      } else {
+        resultado.textContent = `Você acertou ${acertos} de 10! 🎉 Perfeito, meu amor! Parabéns!`;
+        resultado.classList.add("perfeito");
+      }
+    }
+  </script>
+</body>
+</html>
